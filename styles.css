@@ -1,15 +1,50 @@
 body {
     font-family: Arial, sans-serif;
-}
-header, nav, section, footer {
-    padding: 20px;
-    text-align: center;
-}
-nav ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+
+header {
+    text-align: right;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.nav-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-right: 20px;
+}
+
+.introduction {
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    .introduction {
+        max-width: none;
+    }
 }

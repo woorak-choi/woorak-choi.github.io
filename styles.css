@@ -2,62 +2,59 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    background-color: #f0f0f0;
 }
 
 header {
-    padding: 20px;
-    background-color: #f8f9fa;
-    width: 100%;
-    box-sizing: border-box;
+    background: url('header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
 }
 
-.nav-buttons {
+nav ul {
+    list-style: none;
+    padding: 20px;
     text-align: right;
 }
 
-.nav-buttons .button {
-    text-decoration: none;
-    color: black;
-    background-color: lightgray;
-    padding: 10px 20px;
-    margin-left: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
+nav ul li {
+    display: inline;
+    margin-left: 20px;
 }
 
-.main-content {
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile {
     display: flex;
     align-items: center;
     padding: 20px;
-    flex-grow: 1;
+    background-color: white;
+    margin: 20px;
 }
 
-.profile-pic {
+.profile img {
+    border-radius: 50%;
     width: 150px;
-    height: 150px;
-    border-radius: 75px;
     margin-right: 20px;
 }
 
-.introduction {
-    max-width: 600px;
+.bio h1, .bio p {
+    margin: 0;
 }
 
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        text-align: center;
-    }
+.about {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
 
-    .profile-pic {
-        margin-bottom: 20px;
-    }
-
-    .introduction {
-        max-width: none;
-    }
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
